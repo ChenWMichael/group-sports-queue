@@ -1,0 +1,14 @@
+.home-button-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+.home-button {
+  padding: 8px 15px;
+  background-color: transparent;
+  color: ff7f50;
+  border-radius: 4px;
+  text-decoration: none;
+}
