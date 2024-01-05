@@ -1,0 +1,100 @@
+.session-box {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 80%;
+  top: 22%;
+  padding-top: 0.5vh;
+  color: #ff7f50;
+}
+
+.session-box .home-header {
+  color: #ff7f50;
+  font-size: 24px;
+  text-align: center;
+}
+
+.session-box .home-paragraph {
+  color: #ff7f50;
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+.session-box .join-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.session-box .join-session-input {
+  text-align: center;
+  padding: 8px 10px;
+  margin-top: 10px;
+  background-color: transparent;
+  border: 1px solid #ff7f50;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 90%;
+  color: #ff7f50;
+}
+
+.session-box .join-session-input::placeholder {
+  color: #ff7f50;
+}
+
+.session-box .join-session-input:focus {
+  border-color: #ff7f50;
+  outline: none;
+}
+
+.session-box .join-button {
+  padding: 4px;
+}
+
+.session-box .create-header {
+  text-align: center;
+}
+
+.session-box .create-session-name {
+  text-align: center;
+  padding: 8px 10px;
+  margin-top: 10px;
+  background-color: transparent;
+  border: 1px solid #ff7f50;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 90%;
+  color: #ff7f50;
+}
+
+.session-box .create-session-name::placeholder {
+  color: #ff7f50;
+}
+
+.session-box .create-session-name:focus {
+  border-color: #ff7f50;
+  outline: none;
+}
+
+.session-box .create-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.session-box .create-button {
+  padding: 4px;
+}
+
+@media screen and (max-width: 600px) {
+  .session-box .home-header {
+    font-size: 20px;
+  }
+
+  .session-box .home-paragraph {
+    font-size: 14px;
+  }
+}

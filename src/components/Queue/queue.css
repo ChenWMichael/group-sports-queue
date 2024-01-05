@@ -1,0 +1,94 @@
+.queue-container {
+  max-width: 150px;
+  margin: auto;
+  border: 1px solid #ff7f50;
+  border-radius: 8px;
+  background-color: transparent;
+  padding: 8px;
+  justify-content: left;
+  align-items: left;
+  align-content: left;
+}
+
+.queue-header {
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+  color: #ff7f50;
+}
+
+.queue-members-count {
+  text-align: center;
+}
+
+.queue-list {
+  padding: 8px;
+}
+
+.queue-item {
+  padding: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #ff7f50;
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.queue-item-date {
+  position: absolute;
+  bottom: 5px;
+  left: 8px;
+  font-size: 0.75rem;
+  color: #aaa;
+}
+
+.add-member-container {
+  margin-bottom: 16px;
+}
+
+.add-member-input {
+  padding: 8px;
+  max-width: 90%;
+  margin-bottom: 8px;
+  border: 1px solid #ff7f50;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #ff7f50;
+}
+
+.add-member-input:focus {
+  outline: none;
+  border-color: #ff7f50;
+  box-shadow: 0 0 0 2px rgba(255, 127, 80, 0.5);
+}
+
+.add-member-button {
+  padding: 8px 12px;
+  width: 100%;
+  background-color: #004d4d;
+  color: #ff7f50;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-member-button:hover {
+  background-color: #003333;
+}
+
+.delete-button {
+  background-color: transparent;
+  border: none;
+  color: #ff7f50;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  color: #ff7f50;
+  background-color: #003333;
+}

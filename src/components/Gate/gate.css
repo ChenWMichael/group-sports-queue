@@ -1,0 +1,43 @@
+.gate {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 70%;
+  height: 70%;
+  border: 1px solid #ff7f50;
+  min-height: 50%;
+  position: absolute;
+  top: 12%;
+  padding: 0.5vh;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+}
+
+.gate button {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: transparent;
+  color: #ff7f50;
+  border: 1px solid #ff7f50;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.gate button:hover {
+  background-color: #ff7f50;
+  color: #004d4d;
+  border: 1px solid #ff7f50;
+}
+
+@media screen and (max-width: 768px) {
+  .gate {
+    width: 68%; /* Increased width on mobile */
+    height: 80%; /* Increased height on mobile */
+    top: 10%; /* Adjust as needed for vertical positioning */
+  }
+}
