@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import Court from "../Court/court";
 import io from "socket.io-client";
 
-const socket = io(import.meta.env.VITE_WS_BASE_URL || "");
+const socket = io("wss://group-sports-queue.fly.dev/");
 
 const SessionPage = () => {
   const { sessionId } = useParams();

@@ -29,6 +29,8 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
   gap: 10px;
   width: 71%;
 }

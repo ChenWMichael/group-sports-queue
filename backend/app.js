@@ -8,6 +8,7 @@ const socketIo = require("socket.io");
 const app = express();
 const cors = require("cors");
 const http = require("http");
+const path = require("path");
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
@@ -59,7 +60,15 @@ mongoose
 
 app.use("/api", sessionRoutes);
 
-const PORT = process.env.PORT || 5000;
+// Serve static files from the frontend build directory
+app.use(express.static(path.join(__dirname, "../dist")));
+
+// Fallback to serve the index.html file for any other route (SPA behavior)
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../dist", "index.html"));
+});
+
+const PORT = process.env.PORT || 80;
 server.listen(PORT, "0.0.0.0", () =>
   console.log(`Server running on port ${PORT}`)
 );
