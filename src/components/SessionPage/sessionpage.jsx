@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import Court from "../Court/court";
 import io from "socket.io-client";
 
-const socket = io("http://localhost:5000");
+const socket = io(import.meta.env.VITE_WS_BASE_URL || "");
 
 const SessionPage = () => {
   const { sessionId } = useParams();
