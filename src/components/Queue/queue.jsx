@@ -72,6 +72,13 @@ const Queue = ({ items, setItems, sessionId }) => {
     return date.toLocaleString("en-US", options);
   };
 
+  const handleKeyPress = (event) => {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      addItemToEndOfQueue();
+    }
+  };
+
   return (
     <div className="queue-container">
       <h2 className="queue-header">Queue</h2>
@@ -81,6 +88,7 @@ const Queue = ({ items, setItems, sessionId }) => {
           type="text"
           value={inputValue}
           onChange={handleInputChange}
+          onKeyDown={handleKeyPress}
           placeholder="Enter name"
           className="add-member-input"
         />
